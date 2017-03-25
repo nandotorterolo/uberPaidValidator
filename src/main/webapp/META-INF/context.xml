@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<Context sessionCookiePathUsesTrailingSlash='false'>
+
+<ResourceLink name="jdbc/MyLocalDB"
+              global="jdbc/MyDB"
+              auth="Container"
+              type="javax.sql.DataSource" />
+</Context>

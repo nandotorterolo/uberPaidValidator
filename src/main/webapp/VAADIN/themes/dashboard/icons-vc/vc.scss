@@ -1,0 +1,64 @@
+@mixin icons-vc {
+
+	@font-face {
+	  font-family: 'vc';
+	  src: url(font/vc.eot);
+	  src: url(font/vc.eot?#iefix) format('embedded-opentype'), url(font/vc.woff) format('woff'), url(font/vc.ttf) format('truetype'), url(font/vc.svg#fontello) format('svg');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	
+	[class^="icon-"] > .v-button-wrap:before,
+	[class*=" icon-"] > .v-button-wrap:before,
+	[class^="icon-"].v-nativebutton:before,
+	[class*=" icon-"].v-nativebutton:before,
+	[class^="icon-"].v-label:before,
+	[class*=" icon-"].v-label:before,
+	[class*="-icon-"].v-menubar-menuitem:before {
+	  font-family: 'vc';
+	  font-style: normal;
+	  font-weight: normal;
+	  speak: none;
+	  display: inline-block;
+	  text-decoration: inherit;
+	  text-align: center;
+	  line-height: 1;
+	  margin-right: .4em;
+	  vertical-align: 1px;
+	}
+	
+	[class^="icon-"] > .v-button-wrap:before,
+	[class*=" icon-"] > .v-button-wrap:before,
+	[class^="icon-"].v-nativebutton:before,
+	[class*=" icon-"].v-nativebutton:before {
+		margin: 0;
+		margin-left: -.3em;
+	}
+	
+	[class^="icon-"] > span > .v-button-caption,
+	[class^="icon-"] > .v-nativebutton-caption,
+	[class*=" icon-"] > span > .v-button-caption,
+	[class*=" icon-"] > .v-nativebutton-caption {
+	  margin-left: .3em;
+	}
+
+  @include icon(billetes, '\e8d2');
+  @include icon(herramientas, '\e851');
+  @include icon(ventas, '\e822');
+  @include icon(caja, '\e830');
+  @include icon(bancos, '\e88a');
+  @include icon(contabilidad, '\e882');
+  @include icon(clientes, '\e8b9');
+  @include icon(proveedores, '\e84d');
+  @include icon(tests, '\e880');
+
+  @include icon(edit, '\e811');
+  @include icon(trash, '\e8a9');
+  @include icon(delete, '\e8a9');
+  @include icon(add, '\e8aa');
+  @include icon(copy, '\e8ab');
+  @include icon(info, '\e840');
+  @include icon(docAdd, '\e810');
+
+
+}
